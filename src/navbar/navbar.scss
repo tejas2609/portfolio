@@ -1,0 +1,185 @@
+nav{
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    font-family: 'default-regular';
+    width: 100%;
+    box-shadow: 0px 1px 10px 0.5px lightgrey;
+    background-color: white;
+    box-sizing: border-box;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5% 24%;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    .navbar-left{
+        font-family: 'default-bold';
+        font-size: 1rem;
+    }
+    .navbar-right{
+        margin-left: auto;
+        .display-options-wide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            div a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        .display-options-short{
+            display: none;
+            .bar{
+                width: 25px;
+                height: 2px;
+                background-color: black;
+                &:not(:first-child){
+                    margin-top: 5px;
+                }
+            }
+            &.open{
+                .bar{
+                    margin-top: -2px;
+                }
+                .bar:nth-child(2){
+                    display: none;
+                }
+                .bar:first-child{
+                    animation: rotateRight 0.5s ease-in-out forwards;
+                }
+                .bar:last-child{
+                    animation: rotateLeft 0.5s ease-in-out forwards;
+                }
+            }
+            &.close{
+                .bar:first-child{
+                    animation: rotateBackRight 0.5s ease-in-out forwards;
+                }
+                .bar:last-child{
+                    animation: rotateBackLeft 0.5s ease-in-out forwards;
+                }
+            }
+        }
+    }
+}
+.menu-options-short-screen{
+    padding: 1.5% 8%;
+    height: 0;
+    animation: growHeight 0.5s ease-in-out forwards;
+    font-size: 0.8rem;
+    div{
+        &:not(:first-child){
+            margin-top: 2%;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            color: inherit;
+            .icon{
+                margin-left: 1%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@keyframes growHeight {
+    0% {
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotateBackRight {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateBackLeft {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navbar-container{
+        padding: 1.5% 16%;
+        font-size: 0.8rem;
+        .navbar-left{
+            font-size: 0.85rem;
+        }
+        .navbar-right .display-options-wide{
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .navbar-container{
+        padding: 1.5% 12%;
+        font-size: 0.7rem;
+        .navbar-left{
+            font-size: 0.7rem;
+        }
+        .navbar-right .display-options-wide{
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-container{
+        padding: 4% 8%;
+        box-sizing: border-box;
+        font-size: 0.6rem;
+        .navbar-left{
+            font-size: 1rem;
+        }
+        .navbar-right{
+            .display-options-wide{
+                display: none;
+                gap: 1rem;
+            }
+            .display-options-short{
+                display: block;
+            }
+        } 
+
+    }
+}
