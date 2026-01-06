@@ -35,23 +35,34 @@ export function About({ isActive }: AboutProps) {
               isActive ? "opacity-100 translate-x-0 delay-100" : "opacity-0 translate-x-[-20px]"
             }`}
           >
-            I'm a Software Engineer with 2+ years of experience building production-grade systems that handle real-time
-            data, complex workflows, and scalability challenges.
+            I don't just ship code; I ship outcomes. 
           </p>
           <p
             className={`transition-all duration-700 ${
               isActive ? "opacity-100 translate-x-0 delay-300" : "opacity-0 translate-x-[-20px]"
             }`}
           >
-            I've worked across the stack — from Angular and React dashboards to Python-based microservices, Kafka
-            streaming pipelines, and cloud deployments.
+            With over two years of experience in production-grade environments, I’ve learned that the best software 
+            is a blend of technical rigor and empathetic design.  I’m a Software Engineer who obsesses over the <em>"Why"</em> before the <em>"How"</em>:
           </p>
           <p
             className={`transition-all duration-700 ${
               isActive ? "opacity-100 translate-x-0 delay-500" : "opacity-0 translate-x-[-20px]"
             }`}
           >
-            I focus on clean architecture, testable code, system reliability, and long-term maintainability.
+            <ul style={{listStyle: 'initial'}}>
+              <li>
+                <strong>Scalability</strong>: I’ve built distributed backend services that increased system throughput by 45%. 
+              </li>
+              <li>
+                <strong>Efficiency</strong>: I designed reusable UI systems that reduced feature development time by 30%. 
+              </li>
+              <li>
+                <strong>Innovation</strong>: I hold a patent for a cloud-driven detection system, proving that I look for solutions beyond the standard documentation.
+              </li>
+            </ul>
+            <br></br>
+            I thrive in the space where TypeScript meets Python, and where Figma designs meet Scalable Architectures.
           </p>
         </div>
       </div>

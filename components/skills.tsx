@@ -16,12 +16,16 @@ const skillCategories = [
     skills: "Kafka, WebSockets, Event-Driven Architectures, High-Frequency Data Ingestion",
   },
   {
+    title: "Artificial Intelligence",
+    skills: "Generative AI, Machine Learning",
+  },
+  {
     title: "Databases",
-    skills: "PostgreSQL, MongoDB, Firestore, Query Optimization",
+    skills: "PostgreSQL, MongoDB, Firestore, Query Optimization, Redis",
   },
   {
     title: "Cloud & DevOps",
-    skills: "AWS, Azure, Docker, Terraform, CI/CD, Observability",
+    skills: "AWS, Azure, Docker, Terraform, CI/CD, Observability, GitHub",
   },
   {
     title: 'Core Competencies',
