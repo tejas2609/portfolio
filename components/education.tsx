@@ -4,33 +4,28 @@ import { Card } from "@/components/ui/card"
 
 const experiences = [
   {
-    title: "Associate Software Developer",
-    company: "Itanta Analytics",
-    period: "Feb 2023 - Apr 2024",
+    title: "Masters of Science (MSc) in Computer Science",
+    company: "University of Southampton",
+    period: "Sept 2024 - Sept 2025",
     achievements: [
-      "Built Python microservices and Kafka pipelines for real-time analytics",
-      "Improved throughput by 40–45% and reduced latency by ~35%",
-      "Developed Angular and React dashboards consuming live streams",
-      "Implemented TDD (Pytest/Jest) with ~85% test coverage",
-      "Containerized services with Docker and CI/CD pipelines",
+      "Modules: Artificial Intelligence, Web/App Development, Cloud Computing, Cryptography, Network and Web Security",
     ],
   },
   {
-    title: "Frontend Developer Intern",
-    company: "DC Ikigai",
-    period: "May 2021 - Aug 2021",
+    title: "Bachelor of Technology (BTech) in Electronics and Telecommunication",
+    company: "Vishwakarma Institute of Technology, Pune",
+    period: "Aug 2019 - May 2023",
     achievements: [
-      "Built reusable React components with Redux and Material UI",
-      "Improved UI performance, responsiveness, and accessibility",
+      "Modules: Data Structures and Algorithms, DBMS, Computer Networks, Operating Systems, Microprocessors, Embedded Systems, Cloud Development",
     ],
   },
 ]
 
-interface ExperienceProps {
+interface EducationProps {
   isActive: boolean
 }
 
-export function Experience({ isActive }: ExperienceProps) {
+export function Education({ isActive }: EducationProps) {
   return (
     <section className="relative h-full flex items-center justify-center px-4 overflow-hidden" id="experience">
       <div className="absolute inset-0 mesh-gradient" />
@@ -43,7 +38,7 @@ export function Experience({ isActive }: ExperienceProps) {
           }`}
         >
           <span className="signature-wrap">
-            Experience
+            Education
             <svg className="flourish" viewBox="0 0 800 40" preserveAspectRatio="none">
               <path 
                 d="M10,10 Q100,2 190,10 C205,15 15,25 10,25 Q100,18 190,25" 

@@ -16,7 +16,18 @@ export function About({ isActive }: AboutProps) {
             isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          About
+          <span className="signature-wrap">
+            About
+            <svg className="flourish" viewBox="0 0 1000 40" preserveAspectRatio="none">
+              <path 
+                d="M10,10 Q100,2 190,10 C205,15 15,25 10,25 Q100,18 190,25" 
+                fill="none" 
+                stroke="#3b82f6" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+              />
+            </svg>
+          </span>
         </h2>
         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
           <p

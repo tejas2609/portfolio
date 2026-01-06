@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react"
 import { useEffect, useState } from "react"
 
+
 interface HeroProps {
   isActive: boolean
 }
@@ -53,10 +54,10 @@ export function Hero({ isActive }: HeroProps) {
             isActive ? "opacity-100 translate-y-0 delay-200" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="text-shimmer">Your Name</span>
+          <span className="text-shimmer">Tejas Murkya</span>
           <br />
           <span className="bg-gradient-to-r from-primary via-accent to-chart-3 bg-clip-text text-transparent">
-            Full Stack Software Engineer
+            A Full Stack Software Engineer
           </span>
         </h1>
 
@@ -65,7 +66,7 @@ export function Hero({ isActive }: HeroProps) {
             isActive ? "opacity-100 translate-y-0 delay-300" : "opacity-0 translate-y-10"
           }`}
         >
-          Building scalable, real-time systems with Python, TypeScript, Kafka, and modern cloud infrastructure
+          Writing stories using code which connect with large scale users and make a difference in their lives.
         </p>
 
         <div
@@ -74,7 +75,7 @@ export function Hero({ isActive }: HeroProps) {
           }`}
         >
           <a
-            href="https://github.com"
+            href="https://github.com/tejas2609"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-border/50 bg-card/50 backdrop-blur-sm hover:bg-primary hover:border-primary transition-all hover:scale-110 hover:shadow-lg hover:shadow-primary/20"
@@ -82,7 +83,7 @@ export function Hero({ isActive }: HeroProps) {
             <Github className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/tejas-murkya"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-border/50 bg-card/50 backdrop-blur-sm hover:bg-primary hover:border-primary transition-all hover:scale-110 hover:shadow-lg hover:shadow-primary/20"
@@ -90,7 +91,7 @@ export function Hero({ isActive }: HeroProps) {
             <Linkedin className="h-5 w-5" />
           </a>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:murkyatejasjobs@gmail.com"
             className="p-3 rounded-full border border-border/50 bg-card/50 backdrop-blur-sm hover:bg-primary hover:border-primary transition-all hover:scale-110 hover:shadow-lg hover:shadow-primary/20"
           >
             <Mail className="h-5 w-5" />
@@ -102,22 +103,16 @@ export function Hero({ isActive }: HeroProps) {
             isActive ? "opacity-100 translate-y-0 delay-700" : "opacity-0 translate-y-10"
           }`}
         >
-          <Button
+        <Button
             size="lg"
             className="group relative overflow-hidden transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/30"
           >
             <span className="relative z-10 flex items-center">
-              View Projects
+              <a href="Tejas_Murkya_CV.pdf" download="Tejas_Murkya_CV.pdf" style={{textDecoration: 'none', color: 'white'}}>
+                Download Resume
+              </a>
               <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
             </span>
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="group relative overflow-hidden backdrop-blur-sm bg-card/50 hover:bg-card transition-all hover:scale-105 hover:shadow-xl hover:border-primary"
-          >
-            <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-            Download Resume
           </Button>
         </div>
       </div>

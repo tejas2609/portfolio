@@ -43,7 +43,7 @@ export function Contact({ isActive }: ContactProps) {
             isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          Let's build something <span className="text-shimmer">meaningful</span>.
+          Is there any poet here to tell stories?
         </h2>
         <p
           className={`text-xl text-muted-foreground mb-12 transition-all duration-700 ${
@@ -62,7 +62,7 @@ export function Contact({ isActive }: ContactProps) {
             className="group relative overflow-hidden transition-all hover:scale-105 hover:shadow-2xl hover:shadow-primary/30"
             asChild
           >
-            <a href="mailto:your.email@example.com">
+            <a href="mailto:murkyatejasjobs@gmail.com">
               <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Email Me
             </a>
@@ -73,7 +73,7 @@ export function Contact({ isActive }: ContactProps) {
             className="group backdrop-blur-sm bg-card/50 hover:bg-card transition-all hover:scale-105 hover:shadow-xl hover:border-primary"
             asChild
           >
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/tejas-murkya" target="_blank" rel="noopener noreferrer">
               <Linkedin className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               LinkedIn
             </a>
@@ -84,7 +84,7 @@ export function Contact({ isActive }: ContactProps) {
             className="group backdrop-blur-sm bg-card/50 hover:bg-card transition-all hover:scale-105 hover:shadow-xl hover:border-primary"
             asChild
           >
-            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/tejas2609" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               GitHub
             </a>

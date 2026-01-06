@@ -15,7 +15,7 @@
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: oklch(67.64% 0.00008 271.152);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
@@ -121,5 +121,35 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.signature-wrap{
+  position: relative;
+  display: inline-block;
+}
+
+.signature-underline{
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 20px;
+  color: #3b82f6;
+  pointer-events: none;
+}
+
+#signature-path {
+  stroke-dasharray: 800; 
+  stroke-dashoffset: 800;
+  animation: drawLine 3s ease-in-out forwards;
+}
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }

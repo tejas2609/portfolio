@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card"
 const skillCategories = [
   {
     title: "Backend & APIs",
-    skills: "Python (FastAPI, Django, Flask), REST APIs, JWT, Async Processing",
+    skills: "Python (FastAPI, Django, Flask), Java (Spring Boot), REST APIs, JWT, Async Processing",
   },
   {
     title: "Frontend",
@@ -23,6 +23,10 @@ const skillCategories = [
     title: "Cloud & DevOps",
     skills: "AWS, Azure, Docker, Terraform, CI/CD, Observability",
   },
+  {
+    title: 'Core Competencies',
+    skills: 'System Design, Microservices Architecture, Scalability, Performance Optimization, Agile Methodologies, OOPS, DSA, TDD',
+  }
 ]
 
 interface SkillsProps {
@@ -41,7 +45,18 @@ export function Skills({ isActive }: SkillsProps) {
             isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          Skills
+          <span className="signature-wrap">
+            Skills
+            <svg className="flourish" viewBox="0 0 1500 40" preserveAspectRatio="none">
+              <path 
+                d="M10,10 Q100,2 190,10 C205,15 15,25 10,25 Q100,18 190,25" 
+                fill="none" 
+                stroke="#3b82f6" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+              />
+            </svg>
+          </span>
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (

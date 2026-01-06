@@ -8,7 +8,8 @@ import { Projects } from "@/components/projects"
 import { Principles } from "@/components/principles"
 import { Contact } from "@/components/contact"
 import { useEffect, useRef, useState } from "react"
-import { User, Code2, Briefcase, FolderKanban, Heart, Mail } from "lucide-react"
+import { User, Code2, Briefcase, FolderKanban, Heart, Mail, Home, GraduationCap } from "lucide-react"
+import { Education } from "@/components/education"
 
 export default function Page() {
   const [currentSection, setCurrentSection] = useState(0)
@@ -24,6 +25,7 @@ export default function Page() {
     { component: Skills, id: "skills", label: "Skills" },
     { component: Experience, id: "experience", label: "Experience" },
     { component: Projects, id: "projects", label: "Projects" },
+    { component: Education, id: "education", label: "Education" },
     { component: Principles, id: "principles", label: "Principles" },
     { component: Contact, id: "contact", label: "Contact" },
   ]
@@ -163,12 +165,14 @@ export default function Page() {
               }`}
               aria-label={`Go to ${label}`}
             >
-              {index === 0 && <User className="w-4 h-4" />}
-              {index === 1 && <Code2 className="w-4 h-4" />}
-              {index === 2 && <Briefcase className="w-4 h-4" />}
-              {index === 3 && <FolderKanban className="w-4 h-4" />}
-              {index === 4 && <Heart className="w-4 h-4" />}
-              {index === 5 && <Mail className="w-4 h-4" />}
+              {index === 0 && <Home className="w-4 h-4" />}
+              {index === 1 && <User className="w-4 h-4" />}
+              {index === 2 && <Code2 className="w-4 h-4" />}
+              {index === 3 && <Briefcase className="w-4 h-4" />}
+              {index === 4 && <FolderKanban className="w-4 h-4" />}
+              {index === 5 && <GraduationCap className="w-4 h-4" />}
+              {index === 6 && <Heart className="w-4 h-4" />}
+              {index === 7 && <Mail className="w-4 h-4" />}
             </button>
 
             {/* Tooltip */}
